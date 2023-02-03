@@ -1,11 +1,11 @@
 import { useContext } from "react"
 
-import{ ProductsContext } from "../../contexts/product.context";
+import{ CategoriesContext} from "../../contexts/categories.context";
 import ProductCard from "../../components/product-card/product-card.component";
 import "../shop/shop.styles.scss";
 
 const Shop = () =>{
-    const {products} =useContext(ProductsContext);
+    const {products} =useContext(CategoriesContext);
 
     return(
         <div className="products-container">
